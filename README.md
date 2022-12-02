@@ -1,7 +1,7 @@
 # Solidago
 
 [![License](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
-[![Documentation](https://img.shields.io/badge/docs-apache.org-blue.svg)](https://solidago.blockstead.org)
+[![Documentation](https://img.shields.io/badge/docs-apache.org-blue.svg)](https://img.shields.io/badge/doc-blockstead.org-lightgrey)
 
 A modern metadata service for NFTs
 
