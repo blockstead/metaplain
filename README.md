@@ -1,1 +1,1 @@
-# metaplain
+# solidago
