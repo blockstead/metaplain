@@ -18,3 +18,9 @@ Solidago is a metadata service provider.
 Solidago provides:
 
 - A robust and extensible metadata web service
+
+## Run webservice
+`poetry run uvicorn app.main:app --reload`
+
+## Run tests
+`poetry run pytest -v`
