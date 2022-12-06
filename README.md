@@ -23,4 +23,5 @@ Solidago provides:
 `poetry run uvicorn app.main:app --reload`
 
 ## Run tests
-`poetry run pytest -v`
+`poetry run pytest --no-header -vv`
+`poetry run pytest -r`

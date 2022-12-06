@@ -4,7 +4,7 @@ import logging.config
 import yaml
 
 # logger
-with open('./app/loggingConfig.yaml', 'r') as configFile:
+with open('./src/loggingConfig.yaml', 'r') as configFile:
     config = yaml.safe_load(configFile.read())
     logging.config.dictConfig(config)
 
