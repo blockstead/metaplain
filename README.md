@@ -20,8 +20,4 @@ Solidago provides:
 - A robust and extensible metadata web service
 
 ## Run webservice
-`poetry run uvicorn app.main:app --reload`
-
-## Run tests
-`poetry run pytest --no-header -vv`
-`poetry run pytest -r`
+`uvicorn src.main:app --reload`
