@@ -17,7 +17,7 @@ logger: Logger = logging.getLogger(__name__)
 @pytest.mark.asyncio
 async def test_filestore_with_test_metadata_file():
     filestore = FileStore(lambda file_name: file_name, logger)
-    foundText = await asyncio.gather(filestore.retrieve_metadata("../tests/test_nft_metadata.json"))
+    foundText = await asyncio.gather(filestore.retrieve_metadata("../tests/nft_metadata_sample.json"))
     logger.debug(len(foundText))
 
 
@@ -25,4 +25,4 @@ async def test_filestore_with_test_metadata_file():
 async def test_filestore_with_wrong_filepath():
     with pytest.raises(FileNotFoundError):
         filestore = FileStore(lambda file_name: "wrong_path/" + file_name, logger)
-        foundText = await asyncio.gather(filestore.retrieve_metadata("test_nft_metadata.json"))
+        foundText = await asyncio.gather(filestore.retrieve_metadata("nft_metadata_sample.json"))
